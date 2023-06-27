@@ -1,0 +1,238 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-box{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  .left-side{
+    width: 35%;
+    height: 100%;
+  }
+  .right-side{
+    width: 65%;
+    height: 100%;
+  }
+}
+
+.left-main-box{
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  .top-side{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+      width: 70%;
+      height: 60%;
+      border: none;
+      border-radius: 20px;
+      background-color: #2C2C2C;
+      padding-left: 20px;
+      color: white;
+      &:focus{
+        outline: none;
+      }
+    }
+    .add-btn{
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+      cursor: pointer;
+      img{
+        width: 100%;
+      }
+    }
+  }
+  .bottom-side{
+    width: 100%;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    .user-profile{
+      width: 90%;
+      height: 70px;
+      margin: 5px auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      &:hover{
+        background-color: #2C2C2C;
+      }
+      .photo{
+        width: 60px;
+        height: 60px;
+        background-color: #d09a35;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 30px;
+        text-transform: uppercase;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .name{
+        width: 70%;
+        div{
+          &:nth-child(1){
+            font-weight: 700;
+            color: white;
+            font-size: 18px;
+          }
+          &:nth-child(2){
+            font-weight: 400;
+            color: white;
+            font-size: 16px;
+          }
+        }
+      }
+      .delete-icon{
+        position: absolute;
+        right: 15px;
+        top: 16px;
+        transition: 0.6s;
+        img{
+          width: 30px;
+        }
+      }
+      .delete-icon2{
+        position: absolute;
+        right: -50px;
+        top: 16px;
+        transition: 0.6s;
+        img{
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+.right-main-box{
+  padding-left: 1px;
+  background-color: red;
+  background-image: url("./bg.jpg");
+  background-size: 100%;
+  padding-bottom: 10px;
+  height: 100vh;
+  .header{
+    width: 100%;
+    height: 70px;
+    background-color: #212121;
+    display: flex;
+
+    align-items: center;
+    .photo{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: white;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      img{
+        width: 100%;
+      }
+    }
+    .names{
+      font-size: 20px;
+      font-weight: 600;
+      color: white;
+     div{
+        &:nth-child(1){
+          font-size: 14px!important;
+          font-weight: normal;
+        }
+
+     }
+    }
+  }
+
+  .body{
+    width: 100%;
+    height: calc(100vh - 150px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    .MainMassageBox{
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      padding-right: 20px;
+      .massageBox{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 40%;
+        padding: 15px;
+        background-color: #2C2C2C;
+        color: white;
+        font-size: 18px;
+        border-radius: 20px;
+        position: relative;
+        .massage-time {
+          position: absolute;
+          bottom: 4px;
+          right: 10px;
+          font-size: 12px;
+          color: #afafaf;
+        }
+      }
+    }
+
+  }
+  .footer{
+    width: 95%;
+    height: 70px;
+    background-color: #212121;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 auto;
+    .smile{
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      border-radius: 50%;
+    }
+    input{
+      background-color: transparent;
+      width: 70%;
+      height: 79%;
+      border: none;
+      color: white;
+      &:focus{
+        outline: none;
+      }
+    }
+    .send-btn{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      img{
+        width: 50%;
+      }
+    }
+  }
+}
